@@ -24,12 +24,12 @@ const mario = {
   ativa: false,
 };
 
-const App = () => {
+const Introdu = () => {
 
   const teste = "String teeste";
   const ativo = true;
   const random = Math.random();
-  const dados = luana;
+  const dados = mario;
 
   //reduce é um função de callback 
   const total = dados.compras.map(item => Number(item.preco.replace('R$',''))).reduce((a,b) =>a+b);
@@ -47,9 +47,11 @@ const App = () => {
       {/* no span a primeira chave é pra dizer que vai ser js */}
       <p>Situação: <span style={{color: dados.ativa ? 'green':'red'}}>{dados.ativa ? 'Ativa' : 'Inativa'}</span></p>
       <p>Total: R$ {total}</p>
-      
+      {/* as proximas if são a mesma coisa */}
+      <p>{total > 10000 ? 'Você está gastandddo muito' : ''}</p>
+      {total > 10000 && <p>Você está gastando muito</p>}
       </React.Fragment>
   )
 }
 
-export default App
+export default Introdu
