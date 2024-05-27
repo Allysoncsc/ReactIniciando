@@ -1,6 +1,7 @@
 import React from "react"
 
 
+
 const luana = {
   cliente: 'Luana',
   idade: 27,
@@ -39,14 +40,10 @@ const App = () => {
       //   Origamid
       // </a>
       <React.Fragment>
-        {/* <label htmlFor="nome">Nome</label>
-        <input type="text" id="nome" />
-        <p className={ativo ? 'ativo' : 'inativo'}>{random * 100}</p> */}
-      <p>Nome: {dados.cliente}</p>
+      {/* <p>Nome: {dados.cliente}</p>
       <p>Idade: {dados.idade}</p>
-      {/* no span a primeira chave é pra dizer que vai ser js */}
-      <p>Situação: <span style={{color: dados.ativa ? 'green':'red'}}>{dados.ativa ? 'Ativa' : 'Inativa'}</span></p>
-      <p>Total: R$ {total}</p>
+   <p>Situação: <span style={{color: dados.ativa ? 'green':'red'}}>{dados.ativa ? 'Ativa' : 'Inativa'}</span></p> */}
+
       
       </React.Fragment>
   )
